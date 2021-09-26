@@ -1,0 +1,207 @@
+.contact-me{
+    background: #ffffff;
+    width: 100%;
+    color: #000;
+}
+.contact-wrapper{
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+
+.contact-wrapper > div{
+    width: 50%;
+    position: relative;
+}
+.contact-wrapper > div:nth-child(1){
+    background: #fff;
+    overflow: hidden;
+    display: flex;
+    padding: 87px;
+    position: relative;
+}
+
+.contact-text > div{
+    width: 50%;
+}
+.contact-text > div:nth-child(2) > p > strong{
+    color:#3e3ee0;
+}
+.contact-text:before {
+    content: "";
+    position: absolute;
+    width: 181%;
+    height: 201%;
+    background: #35358eba;
+    -webkit-transform: rotate(30deg);transform: rotate(30deg);
+    top: 79%;
+    left: -63%;
+}
+.contact-wrapper > div:nth-child(1) > div >  img{
+    display: block;
+    width: 89%;
+    height: auto;
+}
+
+.contact-wrapper > div:nth-child(2){
+    background: #35358eba;
+    padding: 87px 56px;
+    z-index: 1;
+    overflow: hidden;
+}
+.contact-wrapper > div:nth-child(2)::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #ffffff;
+    right: 58%;
+    top: 0;
+    z-index: -1;
+    transform: rotate(45deg);
+}
+
+
+.contact-btn{
+    margin-top: 20px;
+    padding: 10px 84px !important;
+    font-size: 18px !important;
+    background-color: #35358e !important;
+    color: #fff !important;
+    border-radius: 0 !important;
+    transition:1s all ease !important;
+    border: none;
+}
+.contact-btn:hover{
+    background: #ffffff !important;
+    color: #000000 !important;
+    letter-spacing: 3px;
+    transition:1s all ease;
+}
+
+.form-group{
+    color: #fff;
+}
+.form-group > h1{
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 40px !important;
+}
+.form-group > h1 > span{
+    color: #fff;
+}
+.form-group > textarea{
+    height: 118px !important;
+    padding: 20px;
+}
+.form-group input{
+    padding: 20px;
+}
+.form-control{
+    margin-bottom: 22px;
+    height: 48px !important;
+    background: #2a2a58 !important;
+    color: #fff !important;
+    border-radius: 0 !important;
+    border: none !important;
+    width: 100%;
+}
+.form-control:focus {
+    background: #2a2a58;
+    color: #ffffff;
+  }
+  .fa-arrow-right{
+    float: right;
+    color: #6b6beb;
+    font-size: 20px;
+    position: relative;
+    animation:pointing 1s infinite;
+    transition: .5s all ease;
+  }
+  .contact-text > div:nth-child(2) > h1{
+    font-weight: bold;
+  }
+
+  .contact-info{
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+
+  .contact-info p{
+      margin: 0;
+      display: flex;  
+  }
+  .contact-info a{
+      color: #000;
+  }
+  
+  .contact-info i{
+    background: #6b6beb;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    font-size: 12px;
+    margin-right: 7px;
+    margin-bottom: 10px;
+  }
+
+  @keyframes pointing{
+      0%{
+        left: 0%;
+      }
+      50%{
+          left: 3%;
+      }
+      100%{
+        left: 4%;
+      }
+  }
+
+  /*=============Media screen========================*/
+@media screen and (max-width:900px){
+    .contact-wrapper > div{
+        width: 100%;
+    }
+    .contact-text:before{
+        content: unset;
+    }
+    .contact-wrapper > div:nth-child(1){
+        padding: 0px;
+        flex-flow: wrap;
+    }
+    .contact-text > div{
+        width: 100%;
+        z-index: 1;
+        position: relative;
+        background: #01010c;
+        padding: 20px;
+        color: #fff;
+    }
+    .contact-info a{
+        color:#6b6beb ;
+    }
+    .contact-text > div:nth-child(1), .fa-arrow-right{
+        display: none;
+    }
+    .contact-wrapper > div:nth-child(2){
+            padding: 40px 15px;
+    }
+    .contact-text > div:nth-child(2) > p > strong{
+        color: #3e3ee0;
+    }
+    .contact-info i{
+        background: #2a2a58;
+    }
+}

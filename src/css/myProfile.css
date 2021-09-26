@@ -1,0 +1,173 @@
+.page-sub-head{
+    font-weight: bold;
+    position: relative;
+    color: #fff !important;
+    position: relative;
+    width: 100%;
+    margin-top: 63px;
+}
+
+.skills-title::before, .projects-title::before, .about-me-title::before, .contact-title::before {
+    content: "About me";
+    font-size: 64px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 2%;
+    right: 0;
+    top: -79%;
+    opacity: .1;
+}
+
+.skills-title::before{
+    content: "My skills";
+}
+.projects-title::before{
+    content: "My project";
+}
+
+.contact-title::before {
+    content: "Contact me";
+}
+
+.page-title{
+    width: 100%;
+    height: 255px;
+    position: relative;
+    transition: all .5s ease;
+    background: url("../images/about-me.jpg")no-repeat;
+    background-size: cover;
+    background-position: 6% 57%;
+    padding: 0 104px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1663px;
+    margin: auto;
+}
+.page-title::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #0e0e21 38%, #0000006e);
+}
+.about-links a{
+    color: #fff;
+}
+.about-links{
+    z-index: 2;
+    width: 100%;
+    height: 41%;
+}
+.about-links a:nth-child(1) {
+    padding-right: 26px;
+    border-right: 2px solid;
+}
+.about-links a:nth-child(2){
+    padding-left: 20px;
+}
+
+/* @keyframes colorAnimate{
+    0%{
+        background: linear-gradient(to right, #9393fd 45%, #6262f1 0%);
+        transition: all .5s ease;    
+    }
+    30%{
+        background: linear-gradient(to right, #9393fd 47%, #6262f1 0%);
+        transition: all .5s ease;     
+    }
+
+    60%{
+        background: linear-gradient(to right, #9393fd 50%, #6262f1 0%);
+        transition: all .5s ease;     
+    }
+
+    90%{
+        background: linear-gradient(to right, #9393fd 53%, #6262f1 0%);
+        transition: all .5s ease;        
+    }
+} */
+
+.about-image > img{
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 261px;
+}
+
+.about-me{
+    display: flex;
+    justify-content: space-between;
+    padding: 56px 0;
+    max-width: 1349px;
+    margin: auto;
+}
+.about-me > div{
+    width: 50%;
+    padding: 44px 140px;
+}
+.about-me > div:nth-child(2) > h1{
+    font-size: 31px;
+    font-weight: 900;
+    color: #000;
+    margin-bottom: 20px;
+}
+.about-me > div:nth-child(2) > p{
+    color: #000;
+    font-size: 16px;
+}
+.about-me > div:nth-child(2){
+    padding-left: 20px;
+}
+
+.about-me > div:nth-child(2) > a{
+    padding: 16px 30px;
+    background: rgb(62 62 224);
+    color: #fff;
+    border-radius: 30px;
+}
+.about-me > div:nth-child(2) > a:hover{
+    border:1px solid rgb(62 62 224);
+    color: rgb(62 62 224);
+    background: #ffffff;
+}
+
+.about-me > div:nth-child(2) > div > div > span > span{
+    color: #3e3ee0;
+    font-weight: 900;
+}
+
+.about-me > div:nth-child(2) > div > div{
+    margin: 50px 0;
+    margin-top: 28px;
+}
+.about-me > div:nth-child(2) > h1 > span{
+    color: #6b6beb;
+}
+
+/*=============Media screen========================*/
+@media screen and (max-width:900px){
+    .about-me{
+        flex-direction: column;
+    }
+    .about-me > div{
+        width: 100%;
+    }
+    .about-me > div:nth-child(2), .about-me > div:nth-child(1){
+        padding: 21px;
+    }
+    .about-me > div:nth-child(2) > h1{
+        font-size: 27px;
+    }
+    .about-me > div:nth-child(2){
+        margin-bottom: 27px;
+    }
+    .page-title{
+        padding: 0 10px;
+    }
+}

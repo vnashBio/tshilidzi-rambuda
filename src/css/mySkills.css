@@ -1,0 +1,33 @@
+.my-skills{
+    overflow: hidden;
+}
+.skills-wrapper{
+    max-width: 1349px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 87px 95px;
+    flex-wrap: wrap;
+}
+.skills-wrapper > div{
+    width: 7em;
+    height: 7em;
+    box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+    padding: 25px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-icon{
+    font-size: 64px;
+    color: #6a6aea;
+}
+
+/*=============Media screen========================*/
+@media screen and (max-width:900px){
+    .skills-wrapper{
+        padding: 33px 50px;
+    }
+}

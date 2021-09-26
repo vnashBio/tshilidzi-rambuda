@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@700&display=swap');
+body{
+  font-family: "DM Sans", Arial, sans-serif !important;
+  overflow-x: hidden;
+  color: #000;
+  margin-top: 79px !important;
+}
+html, body{
+  margin:0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none !important  ;
+  font-style: normal;
+}
+a:hover {
+  color: #6b6beb !important;
+}
+*{
+  box-sizing: border-box;
+  transition:all .5s ease;
+}
+@media screen and (max-width: 900px) {
+  body{margin-top: 62px !important;}
+}

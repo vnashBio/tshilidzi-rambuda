@@ -1,0 +1,95 @@
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: linear-gradient(45deg, #565688, #0e0e21);
+    align-items: center;
+    height: 79px;
+    box-shadow: 0 2px 3px 0 rgb(0 0 0 / 20%), 0 0px 2px 0 rgb(0 0 0 / 19%);
+    color: #000;
+    max-width: 1663px;
+    margin: auto;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    top: 0;
+}
+
+.navigation > span > i{
+    font-size: 38px;
+}
+
+.burger-menu{
+    display: none;
+}
+
+.logo{
+    color: #1d1b1b;
+    font-weight: 900;
+    font-size: 18px;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h1{
+    font-size: 18px;
+    font-weight: bold;
+}
+.profile-img{
+    width: 20% !important;
+    margin-right: 40px;
+    border-radius: 100%;
+}
+.logo > img{
+    width: 9%;
+    height: auto;
+    display: block;
+}
+.logo > span > a{
+    color: #000000;
+}
+.nav-menu a{
+    padding: 13px 4%;
+    color: rgb(52, 61, 72);
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #fffcfc;
+}
+.nav-menu a:last-of-type{
+    border: 1px solid #4747d2;
+    border-radius: 30px;
+    color: fff;
+    padding: 13px 7%;
+}
+
+.nav-menu a:hover{
+    color:rgb(62 62 224);
+    letter-spacing: 2px;
+}
+
+.nav-menu a:last-of-type:hover{
+    color:#fff !important;
+    background:  #6a6ae9;
+    border: 1px transparent;
+}
+
+.nav-menu{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*=============Media screen========================*/
+@media screen and (max-width:900px){
+    .burger-menu{
+        display: block;
+        z-index: 99;
+        color: #6b6beb;
+        cursor: pointer;
+    }
+}
